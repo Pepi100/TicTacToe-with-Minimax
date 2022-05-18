@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/radun/Desktop/TicTacToe/cmake-build-debug",
-		"source" : "C:/Users/radun/Desktop/TicTacToe"
+		"build" : "C:/Users/radun/Desktop/TicTacToe-with-Minimax/cmake-build-debug",
+		"source" : "C:/Users/radun/Desktop/TicTacToe-with-Minimax"
 	},
 	"version" : 
 	{

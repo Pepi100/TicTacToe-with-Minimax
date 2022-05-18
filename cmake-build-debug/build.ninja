@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = C$:/Users/radun/Desktop/TicTacToe/cmake-build-debug/
+cmake_ninja_workdir = C$:/Users/radun/Desktop/TicTacToe-with-Minimax/cmake-build-debug/
 # =============================================================================
 # Object build statements for EXECUTABLE target TicTacToe
 
@@ -49,7 +49,7 @@ cmake_ninja_workdir = C$:/Users/radun/Desktop/TicTacToe/cmake-build-debug/
 
 build cmake_object_order_depends_target_TicTacToe: phony || CMakeFiles/TicTacToe.dir
 
-build CMakeFiles/TicTacToe.dir/main.cpp.obj: CXX_COMPILER__TicTacToe_Debug C$:/Users/radun/Desktop/TicTacToe/main.cpp || cmake_object_order_depends_target_TicTacToe
+build CMakeFiles/TicTacToe.dir/main.cpp.obj: CXX_COMPILER__TicTacToe_Debug C$:/Users/radun/Desktop/TicTacToe-with-Minimax/main.cpp || cmake_object_order_depends_target_TicTacToe
   DEP_FILE = CMakeFiles\TicTacToe.dir\main.cpp.obj.d
   FLAGS = -g -std=gnu++14
   OBJECT_DIR = CMakeFiles\TicTacToe.dir
@@ -81,7 +81,7 @@ build TicTacToe.exe: CXX_EXECUTABLE_LINKER__TicTacToe_Debug CMakeFiles/TicTacToe
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\radun\Desktop\TicTacToe\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D C:\Users\radun\Desktop\TicTacToe-with-Minimax\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -92,7 +92,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\radun\Desktop\TicTacToe\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\radun\Desktop\TicTacToe -BC:\Users\radun\Desktop\TicTacToe\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D C:\Users\radun\Desktop\TicTacToe-with-Minimax\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\radun\Desktop\TicTacToe-with-Minimax -BC:\Users\radun\Desktop\TicTacToe-with-Minimax\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -110,7 +110,7 @@ build TicTacToe: phony TicTacToe.exe
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/radun/Desktop/TicTacToe/cmake-build-debug
+# Folder: C:/Users/radun/Desktop/TicTacToe-with-Minimax/cmake-build-debug
 
 build all: phony TicTacToe.exe
 

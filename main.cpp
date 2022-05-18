@@ -121,11 +121,11 @@ void place(char c, char m){
     grid[getLine(m)][getColumn(m)] = c;
 }
 
-int minimax(char gridCopy[3][3], int depth, bool isO, int alpha, int beta){
-    if(isOver(gridCopy)){
-        if(winner(gridCopy) == ' ') return 0;
+int minimax( int depth, bool isO, int alpha, int beta){
+    if(isOver(grid)){
+        if(winner(grid) == ' ') return 0;
         else
-            if(winner(gridCopy) == 'X' ) return -10+depth;
+            if(winner(grid) == 'X' ) return -10+depth;
             else return 10-depth;
     }
 
@@ -135,10 +135,10 @@ int minimax(char gridCopy[3][3], int depth, bool isO, int alpha, int beta){
          eval = -1 * inf;
         for(int i=0;i<3;i++){
             for(int j=0;j<3;j++){
-                if(gridCopy[i][j] == ' '){
-                    gridCopy[i][j] = 'O';
-                    e= minimax(gridCopy, depth+1, false, alpha, beta);
-                    gridCopy[i][j] = ' ';
+                if(grid[i][j] == ' '){
+                    grid[i][j] = 'O';
+                    e= minimax( depth+1, false, alpha, beta);
+                    grid[i][j] = ' ';
 
                     eval = max( eval, e );
                     alpha = max(alpha, e);
@@ -152,10 +152,10 @@ int minimax(char gridCopy[3][3], int depth, bool isO, int alpha, int beta){
          eval = inf;
         for(int i=0;i<3;i++){
             for(int j=0;j<3;j++){
-                if(gridCopy[i][j] == ' '){
-                    gridCopy[i][j] = 'X';
-                    e= minimax(gridCopy, depth+1, true, alpha, beta);
-                    gridCopy[i][j] = ' ';
+                if(grid[i][j] == ' '){
+                    grid[i][j] = 'X';
+                    e= minimax( depth+1, true, alpha, beta);
+                    grid[i][j] = ' ';
                     eval = min( eval, e );
                     alpha = max(alpha, e);
                     if(beta<= alpha) return eval;
@@ -204,8 +204,8 @@ void startGame(){
                     if (grid[i][j] == ' ') {
                         grid[i][j] = 'O';
 
-                        if (maxim < minimax(grid, 0, false, -1 * inf, inf)) {
-                            maxim = minimax(grid, 0, false, -1 * inf, inf);
+                        if (maxim < minimax( 0, false, -1 * inf, inf)) {
+                            maxim = minimax( 0, false, -1 * inf, inf);
                             ipoz = i;
                             jpoz = j;
                         }
