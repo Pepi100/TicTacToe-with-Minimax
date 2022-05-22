@@ -169,6 +169,7 @@ private:
 
 
     }
+
 public:
     XOGame() = default;
 
@@ -233,9 +234,6 @@ public:
     }
 
 };
-
-
-
 
 
 int main() {
